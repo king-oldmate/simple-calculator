@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+    	<meta charset="utf-8">
+    	<meta name="description" content="This is where your description goes">
+    	<meta name="keywords" content="one, two, three">
+
+		<title>Simple Calculator</title>
+
+		<!-- external CSS link -->
+		<link rel="stylesheet" href="css/normalize.css">
+		<link rel="stylesheet" href="css/style.css">
+	</head>
+	<body>
+		<section class="calculatorMain">
+			<div class="display calculatorEntry"></div>
+			<div class="display calculatorResult"></div>
+			<div data-key="7" class="key">7</div>
+			<div data-key="8" class="key">8</div>
+			<div data-key="9" class="key">9</div>
+			<div data-key="/" class="key">÷</div>
+			<div data-key="4" class="key">4</div>
+			<div data-key="5" class="key">5</div>
+			<div data-key="6" class="key">6</div>
+			<div data-key="*" class="key">×</div>
+			<div data-key="1" class="key">1</div>
+			<div data-key="2" class="key">2</div>
+			<div data-key="3" class="key">3</div>
+			<div data-key="-" class="key">-</div>
+			<div data-key="0" class="key">0</div>
+			<div data-key="." class="key">.</div>
+			<div data-key="=" class="key">=</div>
+			<div data-key="+" class="key">+</div>
+
+		</section>
+
+		<script type="text/javascript" src="js/main.js"></script>
+		<!-- <script>
+
+		function keyPress(e){
+			const calcKey = document.querySelector(`.key[data-key="${e.keyCode}"]`)
+			calcKey.classList.add('pressed')
+			if ((e.key >= 48 && e.key <= 57) || (e.keyCode >= 96 && e.keyCode <= 105)) { 
+  				// 0-9 only
+					console.log('heh')
+			}
+			}
+		function keyReleased(e){
+			const calcKey = document.querySelector(`.key[data-key="${e.keyCode}"]`)
+			calcKey.classList.remove('pressed')
+		}
+		window.addEventListener('keydown',keyPress)
+		window.addEventListener('keyup', keyReleased)
+		</script> -->
+	</body>
+</html>

@@ -1,0 +1,49 @@
+/******************************************
+/* CSS
+/*******************************************/
+
+/* Box Model Hack */
+*{
+  box-sizing: border-box;
+}
+
+/******************************************
+/* LAYOUT
+/*******************************************/
+
+html{
+  font-size: 10px;
+  font-family: sans-serif;
+}
+
+.calculatorMain{
+  display: grid;
+  width: 400px;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: repeat(6, 1fr);
+  align-self: center;
+  justify-self: center;
+  margin: 5rem auto;
+  border: 2px solid black;
+
+}
+
+.display{
+  grid-column: span 4;
+}
+
+.key{
+  border: 2px solid black;
+  text-align: center;
+  padding: 4rem 0;
+  font-size: 2rem;
+}
+
+.key:hover, .pressed{
+  border: 1px solid orange;
+  background-color: orange;
+  font-weight: bold;
+}
+/******************************************
+/* ADDITIONAL STYLES
+/*******************************************/
